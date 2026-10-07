@@ -64,7 +64,7 @@
 <header>
   <div class="wrap">
     <h1>Informativa sulla privacy</h1>
-    <p>Matchline — ultimo aggiornamento: 17 settembre 2026</p>
+    <p>Matchline — ultimo aggiornamento: 7 ottobre 2026</p>
   </div>
 </header>
 
@@ -167,8 +167,22 @@ persone, e non contiene nulla che ti riguardi.</p>
 
 <p>Le statistiche, i risultati, le formazioni e le informazioni sulle
 partite provengono da <strong>API-Football</strong>, fornitore terzo di
-dati sportivi. Le richieste che l'app invia riguardano esclusivamente
-partite, squadre e giocatori: non contengono informazioni sull'utente.</p>
+dati sportivi. L'app non li chiede direttamente ad API-Football: li
+chiede al nostro server, che li chiede ad API-Football una volta sola
+per tutti. Le richieste riguardano esclusivamente partite, squadre e
+giocatori e non contengono informazioni sull'utente; ad API-Football
+arrivano dal nostro server, quindi senza l'indirizzo IP del tuo
+dispositivo. Fanno eccezione gli stemmi delle squadre, che l'app scarica
+direttamente dal server di immagini di API-Football: per quelle
+richieste, come per qualunque immagine scaricata da internet, il loro
+server riceve l'indirizzo IP del dispositivo.</p>
+
+<p>Come ogni servizio su internet, il nostro server riceve l'indirizzo
+IP da cui arriva ciascuna richiesta. Lo usiamo soltanto per limitare il
+numero di richieste che uno stesso indirizzo può fare in un minuto, così
+da fermare gli abusi: resta nella memoria del servizio al massimo un
+paio di minuti dopo l'ultima richiesta, non viene salvato e non viene
+scritto nei nostri registri.</p>
 
 <h2>Servizi di analisi e pubblicità</h2>
 
@@ -230,7 +244,7 @@ segnalate all'interno dell'app.</p>
 
 <h2 id="english">Privacy Policy — English</h2>
 
-<p>Last updated: 17 September 2026</p>
+<p>Last updated: 7 October 2026</p>
 
 <p>This policy explains how the <strong>Matchline</strong> app handles
 user information. Matchline is developed by Studio25Lab and provides
@@ -327,8 +341,20 @@ nothing about you.</p>
 
 <p>Statistics, results, line-ups and match information come from
 <strong>API-Football</strong>, a third-party sports data provider. The
-requests the app sends concern only matches, teams and players: they
-carry no information about you.</p>
+app does not ask API-Football directly: it asks our server, which asks
+API-Football once for everyone. The requests concern only matches, teams
+and players and carry no information about you; API-Football receives
+them from our server, so without your device's IP address. The
+exception is team crests, which the app downloads directly from
+API-Football's image server: for those requests, as for any image
+downloaded from the internet, their server receives your device's IP
+address.</p>
+
+<p>Like any internet service, our server receives the IP address each
+request comes from. We use it only to limit how many requests a single
+address can make in a minute, to stop abuse: it stays in the service's
+memory for at most a couple of minutes after the last request, is not
+saved and is not written to our logs.</p>
 
 <h3>Analytics and advertising</h3>
 
