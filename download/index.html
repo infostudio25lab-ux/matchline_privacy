@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Scarica MatchLine — Statistiche del calcio in tempo reale</title>
+<meta name="description" content="Scarica MatchLine per iPhone e Android:
+ voti, formazioni, statistiche e notifiche live della Serie A. Gratis, senza
+ registrazione.">
+<link rel="canonical" href="https://infostudio25lab-ux.github.io/matchline_privacy/download/">
+<meta name="theme-color" content="#0F1A33">
+
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="MatchLine">
+<meta property="og:url" content="https://infostudio25lab-ux.github.io/matchline_privacy/download/">
+<meta property="og:title" content="Scarica MatchLine">
+<meta property="og:description" content="Statistiche del calcio in tempo
+ reale: voti, formazioni e notifiche live della Serie A. Per iPhone e
+ Android.">
+<meta property="og:image" content="https://infostudio25lab-ux.github.io/matchline_privacy/download/anteprima.png">
+<meta property="og:image:width" content="1600">
+<meta property="og:image:height" content="900">
+<meta property="og:image:alt" content="MatchLine — il calcio in tempo reale">
+<meta property="og:locale" content="it_IT">
+
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Scarica MatchLine">
+<meta name="twitter:description" content="Statistiche del calcio in tempo
+ reale: voti, formazioni e notifiche live della Serie A.">
+<meta name="twitter:image" content="https://infostudio25lab-ux.github.io/matchline_privacy/download/anteprima.png">
+
+<style>
+  /* Manrope servito da qui, non da una CDN: la pagina non fa nessuna
+     richiesta fuori da questo repository. */
+  @font-face {
+    font-family: Manrope; font-style: normal; font-weight: 400;
+    src: url(font/Manrope-400.ttf) format("truetype"); font-display: swap;
+  }
+  @font-face {
+    font-family: Manrope; font-style: normal; font-weight: 800;
+    src: url(font/Manrope-800.ttf) format("truetype"); font-display: swap;
+  }
+
+  :root {
+    --navy: #0F1A33;
+    --verde: #22C55E;
+    --tenue: #A8B3C4;
+    --segno: 68px;          /* altezza del marchio */
+    --badge: 52px;          /* altezza del DISEGNO dei badge */
+  }
+
+  * { box-sizing: border-box; }
+
+  html, body { margin: 0; padding: 0; max-width: 100%; }
+
+  body {
+    background: var(--navy);
+    color: #fff;
+    font-family: Manrope, -apple-system, BlinkMacSystemFont, "Segoe UI",
+                 Roboto, Helvetica, Arial, sans-serif;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 48px 24px;
+    text-align: center;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  /* ── marchio e nome ──────────────────────────────────────────
+     Impilati e centrati. La misura la lega l'altezza delle
+     maiuscole: Manrope ha cap height 0,72 em, e il marchio e' alto
+     il doppio di quelle, quindi corpo = segno / (2 x 0,72). */
+  .firma { display: flex; flex-direction: column; align-items: center; }
+  .segno {
+    height: var(--segno);
+    width: calc(var(--segno) * 1.24609375);     /* 638/512, l'ingombro vero */
+    display: block;
+  }
+  h1 {
+    font-size: calc(var(--segno) / 1.44);
+    font-weight: 800;
+    letter-spacing: -0.0167em;
+    line-height: 1;
+    margin: calc(var(--segno) * 0.24) 0 0;
+  }
+
+  .claim {
+    color: var(--verde);
+    font-size: 17px;
+    line-height: 1.4;
+    margin: 18px 0 0;
+    max-width: 22em;
+  }
+
+  /* ── i badge ─────────────────────────────────────────────────
+     Sono marchi registrati, presi dai kit ufficiali e non ritoccati.
+
+     Le due tele non hanno le stesse proporzioni: l'SVG di Apple e'
+     tutto disegno (119,664 x 40), il PNG di Google e' 646 x 250 con
+     29 px di aria sopra e sotto gia' dentro il file, quindi il
+     disegno e' 646 x 192. Dando la stessa altezza ai due file, il
+     badge di Google uscirebbe piu' piccolo del 23%: si misura il
+     disegno, non la tela.
+
+     Gli spazi di rispetto: Apple chiede il 10% dell'altezza del
+     badge su ogni lato (5,2 px), Google un quarto (13 px). Il vuoto
+     fra i due e almeno il margine della pagina non scendono mai
+     sotto i 24, quindi tutt'e due sono rispettati con margine. */
+  .store {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+    margin-top: 40px;
+  }
+  .store a { display: block; line-height: 0; }
+  .store img { display: block; max-width: 100%; height: auto; }
+  .store .apple { height: var(--badge); }
+  .store .play { height: calc(var(--badge) * 250 / 192); }
+
+  @media (min-width: 560px) {
+    :root { --segno: 84px; }
+    .store { flex-direction: row; justify-content: center; gap: 28px; }
+    .claim { font-size: 19px; }
+  }
+
+  footer {
+    margin-top: 56px;
+    font-size: 13px;
+    color: var(--tenue);
+  }
+  footer a { color: var(--tenue); }
+  footer span { margin: 0 8px; opacity: .5; }
+</style>
+</head>
+<body>
+
+<main class="firma">
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="193 305 638 512" class="segno" aria-hidden="true" focusable="false"><defs>
+    <linearGradient id="ml-riempimento" x1="0" y1="1" x2="0" y2="0">
+      <stop offset="0" stop-color="#15803D" stop-opacity="0.1"/>
+      <stop offset="0.15" stop-color="#15803D" stop-opacity="0.38"/>
+      <stop offset="0.5" stop-color="#16A34A" stop-opacity="0.72"/>
+      <stop offset="1" stop-color="#22C55E" stop-opacity="1"/>
+    </linearGradient>
+    <clipPath id="ml-b0"><path d="M 269 805 L 269 489 A 43 43 0 0 1 312 446 L 380 446 A 43 43 0 0 1 423 489 L 423 805 Z"/></clipPath>
+    <clipPath id="ml-b1"><path d="M 435 805 L 435 348 A 43 43 0 0 1 478 305 L 546 305 A 43 43 0 0 1 589 348 L 589 805 Z"/></clipPath>
+    <clipPath id="ml-b2"><path d="M 601 805 L 601 523 A 43 43 0 0 1 644 480 L 712 480 A 43 43 0 0 1 755 523 L 755 805 Z"/></clipPath>
+  </defs>
+    <path d="M 269 805 L 269 489 A 43 43 0 0 1 312 446 L 380 446 A 43 43 0 0 1 423 489 L 423 805 Z" fill="url(#ml-riempimento)"/>
+    <g clip-path="url(#ml-b0)"><path d="M 269 805 L 269 489 A 43 43 0 0 1 312 446 L 380 446 A 43 43 0 0 1 423 489 L 423 805 Z" fill="none" stroke="#22C55E" stroke-width="22" stroke-linejoin="round"/></g>
+    <path d="M 435 805 L 435 348 A 43 43 0 0 1 478 305 L 546 305 A 43 43 0 0 1 589 348 L 589 805 Z" fill="url(#ml-riempimento)"/>
+    <g clip-path="url(#ml-b1)"><path d="M 435 805 L 435 348 A 43 43 0 0 1 478 305 L 546 305 A 43 43 0 0 1 589 348 L 589 805 Z" fill="none" stroke="#22C55E" stroke-width="22" stroke-linejoin="round"/></g>
+    <path d="M 601 805 L 601 523 A 43 43 0 0 1 644 480 L 712 480 A 43 43 0 0 1 755 523 L 755 805 Z" fill="url(#ml-riempimento)"/>
+    <g clip-path="url(#ml-b2)"><path d="M 601 805 L 601 523 A 43 43 0 0 1 644 480 L 712 480 A 43 43 0 0 1 755 523 L 755 805 Z" fill="none" stroke="#22C55E" stroke-width="22" stroke-linejoin="round"/></g>
+    <rect x="193" y="793" width="638" height="24" fill="#22C55E"/>
+  </svg>
+  <h1>MatchLine</h1>
+  <p class="claim">Statistiche del calcio in tempo reale</p>
+
+  <div class="store">
+    <a href="https://apps.apple.com/it/app/id6812703242">
+      <img class="apple" src="app-store-badge.svg"
+           alt="Scarica MatchLine su App Store" width="156" height="52">
+    </a>
+    <a href="https://play.google.com/store/apps/details?id=com.studio25lab.matchline">
+      <img class="play" src="google-play-badge.png"
+           alt="Disponibile su Google Play" width="175" height="68">
+    </a>
+  </div>
+</main>
+
+<footer>
+  <a href="../">Informativa sulla privacy</a><span>·</span><a
+   href="../supporto/">Supporto</a>
+</footer>
+
+</body>
+</html>
