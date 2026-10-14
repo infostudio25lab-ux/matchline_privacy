@@ -64,7 +64,7 @@
 <header>
   <div class="wrap">
     <h1>Informativa sulla privacy</h1>
-    <p>Matchline — ultimo aggiornamento: 7 ottobre 2026</p>
+    <p>Matchline — ultimo aggiornamento: 14 ottobre 2026</p>
   </div>
 </header>
 
@@ -79,10 +79,12 @@ Studio25Lab e fornisce statistiche calcistiche sulla Serie A.</p>
 <div class="nota">
   <p><strong>In sintesi:</strong> Matchline non richiede registrazione,
   non crea account e non chiede mai nome, email o altri dati anagrafici.
-  Le preferenze restano sul dispositivo. L'unica eccezione sono le
-  <strong>notifiche</strong>: se le attivi, il nostro server deve sapere
-  a quale dispositivo mandarle e di che cosa — e solo quello. Trovi
-  l'elenco esatto più sotto.</p>
+  Le preferenze restano sul dispositivo. Le eccezioni sono due: le
+  <strong>notifiche</strong>, perché se le attivi il nostro server deve
+  sapere a quale dispositivo mandarle e di che cosa — e solo quello — e i
+  <strong>rapporti sugli errori</strong>, che ci dicono quando l'app si
+  blocca e che puoi spegnere dalle Impostazioni. Trovi l'elenco esatto
+  più sotto.</p>
 </div>
 
 <h2>Dati che non raccogliamo</h2>
@@ -102,6 +104,7 @@ del dispositivo:</p>
   <li>impostazioni delle notifiche</li>
   <li>lingua e tema chiaro o scuro</li>
   <li>frequenza di aggiornamento dei dati in tempo reale</li>
+  <li>la scelta sull'invio dei rapporti sugli errori</li>
 </ul>
 
 <p>Queste informazioni restano sul dispositivo e vengono eliminate
@@ -184,11 +187,45 @@ da fermare gli abusi: resta nella memoria del servizio al massimo un
 paio di minuti dopo l'ultima richiesta, non viene salvato e non viene
 scritto nei nostri registri.</p>
 
+<h2>Rapporti sugli errori</h2>
+
+<p>Se l'app si chiude da sola o una parte di una schermata non si
+carica, l'app invia a <strong>Firebase Crashlytics</strong>, un servizio
+di Google, un rapporto tecnico sull'errore. Il rapporto contiene:</p>
+
+<ul>
+  <li>il tipo di errore e il punto del codice in cui è avvenuto</li>
+  <li>alcune informazioni sullo stato dell'app in quel momento</li>
+  <li>il modello e il sistema operativo del telefono, e la versione
+  dell'app</li>
+  <li>un identificativo casuale dell'installazione, che serve a contare
+  quanti telefoni hanno lo stesso errore</li>
+</ul>
+
+<p>Il testo dell'errore può contenere il dato che l'app stava leggendo
+in quel momento, per esempio il numero di una partita. Il rapporto
+<strong>non contiene</strong> nome, email, posizione, né alcun dato che
+ti identifichi, e lo usiamo solo per trovare e correggere gli errori.
+Google conserva i rapporti per <strong>90 giorni</strong> e li tratta
+per nostro conto, secondo la
+<a href="https://policies.google.com/privacy" target="_blank"
+rel="noopener">informativa sulla privacy di Google</a>. Come per le
+notifiche, Google può trattare questi dati anche fuori dall'Unione
+europea, con le garanzie previste dal GDPR.</p>
+
+<p>La base giuridica è il nostro legittimo interesse a far funzionare
+l'app senza errori (art. 6, par. 1, lett. f del GDPR). Puoi opporti in
+qualsiasi momento spegnendo <strong>«Invia rapporti sugli
+errori»</strong> nelle Impostazioni dell'app: da quel momento non viene
+più inviato niente.</p>
+
 <h2>Servizi di analisi e pubblicità</h2>
 
 <p>Alla data di questa informativa Matchline non utilizza strumenti di
 analisi del comportamento, non mostra pubblicità e non impiega
-identificatori pubblicitari.</p>
+identificatori pubblicitari. I rapporti sugli errori descritti sopra
+servono solo a correggere i guasti dell'app, non a studiare come la
+usi.</p>
 
 <p>Se in futuro venissero introdotti, questa informativa sarà aggiornata
 prima dell'attivazione e ne verrà data comunicazione all'interno
@@ -209,11 +246,13 @@ diritti di accesso, rettifica, cancellazione e opposizione al
 trattamento dei dati personali.</p>
 
 <p>Matchline non raccoglie dati anagrafici, quindi non abbiamo modo di
-sapere chi sei né di collegarti a un'identità. L'unica cosa che
-conserviamo è l'iscrizione agli avvisi descritta sopra, legata al token
-del dispositivo.</p>
+sapere chi sei né di collegarti a un'identità. Quello che conserviamo è
+l'iscrizione agli avvisi descritta sopra, legata al token del
+dispositivo, e — solo se l'app incontra un errore — il rapporto tecnico,
+che Google conserva per 90 giorni.</p>
 
-<p>Per cancellarla puoi, in ordine di immediatezza:</p>
+<p>Per cancellare l'iscrizione agli avvisi puoi, in ordine di
+immediatezza:</p>
 
 <ul>
   <li><strong>spegnere le notifiche</strong> nell'app: l'iscrizione
@@ -224,6 +263,10 @@ del dispositivo.</p>
   contatto l'iscrizione viene cancellata da sola;</li>
   <li><strong>scriverci</strong> all'indirizzo in fondo alla pagina.</li>
 </ul>
+
+<p>Per i rapporti sugli errori: spegnendo «Invia rapporti sugli errori»
+nelle Impostazioni non ne parte più nessuno, e quelli già inviati
+vengono cancellati da soli dopo 90 giorni.</p>
 
 <h2>Modifiche a questa informativa</h2>
 
@@ -244,7 +287,7 @@ segnalate all'interno dell'app.</p>
 
 <h2 id="english">Privacy Policy — English</h2>
 
-<p>Last updated: 7 October 2026</p>
+<p>Last updated: 14 October 2026</p>
 
 <p>This policy explains how the <strong>Matchline</strong> app handles
 user information. Matchline is developed by Studio25Lab and provides
@@ -253,10 +296,12 @@ Italian Serie A football statistics.</p>
 <div class="nota">
   <p><strong>In short:</strong> Matchline requires no registration,
   creates no account and never asks for your name, email or any
-  personal details. Your preferences stay on your device. The only
-  exception is <strong>notifications</strong>: if you turn them on,
-  our server needs to know which device to notify and about what —
-  and nothing more. The exact list is below.</p>
+  personal details. Your preferences stay on your device. There are two
+  exceptions: <strong>notifications</strong>, because if you turn them
+  on our server needs to know which device to notify and about what —
+  and nothing more — and <strong>error reports</strong>, which tell us
+  when the app breaks and which you can turn off in Settings. The exact
+  list is below.</p>
 </div>
 
 <h3>What we do not collect</h3>
@@ -276,6 +321,7 @@ storage:</p>
   <li>notification settings</li>
   <li>language, and light or dark theme</li>
   <li>how often live data refreshes</li>
+  <li>your choice about sending error reports</li>
 </ul>
 
 <p>These stay on your device and are removed when you uninstall the
@@ -356,12 +402,43 @@ address can make in a minute, to stop abuse: it stays in the service's
 memory for at most a couple of minutes after the last request, is not
 saved and is not written to our logs.</p>
 
+<h3>Error reports</h3>
+
+<p>If the app closes unexpectedly or part of a screen fails to load, the
+app sends a technical report about the error to <strong>Firebase
+Crashlytics</strong>, a Google service. The report contains:</p>
+
+<ul>
+  <li>the type of error and where in the code it happened</li>
+  <li>some information about the state of the app at that moment</li>
+  <li>the phone model and operating system, and the app version</li>
+  <li>a random installation identifier, used to count how many phones
+  have the same error</li>
+</ul>
+
+<p>The error text may contain the data the app was reading at that
+moment, for example the number of a match. The report <strong>contains
+no</strong> name, email, location or any data that identifies you, and
+we use it only to find and fix errors. Google keeps the reports for
+<strong>90 days</strong> and processes them on our behalf, under
+<a href="https://policies.google.com/privacy" target="_blank"
+rel="noopener">Google's privacy policy</a>. As with notifications,
+Google may process this data outside the European Union, with the
+safeguards required by the GDPR.</p>
+
+<p>The legal basis is our legitimate interest in keeping the app free of
+errors (Art. 6(1)(f) GDPR). You can object at any time by turning off
+<strong>«Send error reports»</strong> in the app's Settings: from then on
+nothing is sent.</p>
+
 <h3>Analytics and advertising</h3>
 
 <p>As of this policy, Matchline uses no behavioural analytics, shows no
-advertising and uses no advertising identifiers. Should any be
-introduced, this policy will be updated before they are switched on and
-you will be told inside the app.</p>
+advertising and uses no advertising identifiers. The error reports
+described above are used only to fix faults in the app, not to study how
+you use it. Should analytics or advertising be introduced, this policy
+will be updated before they are switched on and you will be told inside
+the app.</p>
 
 <h3>Children</h3>
 
@@ -378,11 +455,13 @@ access, rectification, erasure and objection to the processing of
 personal data.</p>
 
 <p>Matchline collects no personal details, so we have no way of knowing
-who you are or of linking you to an identity. The only thing we keep is
-the notification subscription described above, tied to your device
-token.</p>
+who you are or of linking you to an identity. What we keep is the
+notification subscription described above, tied to your device token,
+and — only if the app runs into an error — the technical report, which
+Google keeps for 90 days.</p>
 
-<p>To delete it you can, from quickest to slowest:</p>
+<p>To delete your notification subscription you can, from quickest to
+slowest:</p>
 
 <ul>
   <li><strong>turn notifications off</strong> in the app: the
@@ -393,6 +472,10 @@ token.</p>
   subscription is deleted by itself;</li>
   <li><strong>write to us</strong> at the address below.</li>
 </ul>
+
+<p>For error reports: turning off «Send error reports» in Settings stops
+any further report, and those already sent are deleted automatically
+after 90 days.</p>
 
 <h3>Changes to this policy</h3>
 
