@@ -64,7 +64,7 @@
 <header>
   <div class="wrap">
     <h1>Informativa sulla privacy</h1>
-    <p>Matchline — ultimo aggiornamento: 29 ottobre 2026</p>
+    <p>Matchline — ultimo aggiornamento: 12 novembre 2026</p>
   </div>
 </header>
 
@@ -75,17 +75,18 @@
 <p>Questa informativa descrive come l'applicazione <strong>Matchline</strong>
 tratta le informazioni degli utenti. Matchline è sviluppata da
 Studio25Lab e fornisce statistiche calcistiche sulla Serie A, sulle coppe
-europee e sui principali campionati europei.</p>
+europee e sui principali campionati europei e sudamericani.</p>
 
 <div class="nota">
   <p><strong>In sintesi:</strong> Matchline non richiede registrazione,
   non crea account e non chiede mai nome, email o altri dati anagrafici.
-  Le preferenze restano sul dispositivo. Le eccezioni sono due: le
+  Le preferenze restano sul dispositivo. Le eccezioni sono tre: le
   <strong>notifiche</strong>, perché se le attivi il nostro server deve
-  sapere a quale dispositivo mandarle e di che cosa — e solo quello — e i
+  sapere a quale dispositivo mandarle e di che cosa — e solo quello —, i
   <strong>rapporti sugli errori</strong>, che ci dicono quando l'app si
-  blocca e che puoi spegnere dalle Impostazioni. Trovi l'elenco esatto
-  più sotto.</p>
+  blocca e che puoi spegnere dalle Impostazioni, e il <strong>codice per
+  usare l'app su più dispositivi</strong>, solo se decidi di crearlo. Trovi
+  l'elenco esatto più sotto.</p>
 </div>
 
 <h2>Dati che non raccogliamo</h2>
@@ -93,8 +94,10 @@ europee e sui principali campionati europei.</p>
 <p>Matchline non richiede la creazione di un account e non chiede
 nome, indirizzo email, numero di telefono o altri dati anagrafici.
 Non raccogliamo la posizione geografica, non accediamo a rubrica,
-fotocamera, microfono, galleria delle foto o file personali. Delle foto
-l'app vede solo le immagini che scegli tu per leggere la tua rosa, come
+microfono, galleria delle foto o file personali. Delle foto l'app vede
+solo le immagini che scegli tu per leggere la tua rosa, e la fotocamera si
+apre solo se la usi per inquadrare il QR del codice per più dispositivi:
+in tutti e due i casi l'immagine non viene salvata né inviata, come
 spiegato più sotto.</p>
 
 <h2>Informazioni salvate sul dispositivo</h2>
@@ -105,6 +108,7 @@ del dispositivo:</p>
 <ul>
   <li>squadre, partite e giocatori aggiunti ai preferiti</li>
   <li>le rose della Rosa Fanta, con i crediti pagati all'asta</li>
+  <li>le competizioni che segui</li>
   <li>impostazioni delle notifiche, compresa la scelta sui riepiloghi di
   giornata</li>
   <li>lingua e tema chiaro o scuro</li>
@@ -113,13 +117,13 @@ del dispositivo:</p>
 </ul>
 
 <p>Queste informazioni restano sul dispositivo e vengono eliminate
-disinstallando l'applicazione. Finché le notifiche sono spente non
-lasciano mai il telefono.</p>
+disinstallando l'applicazione. Finché le notifiche sono spente e non crei
+un codice per più dispositivi, non lasciano mai il telefono.</p>
 
 <h2>La rosa letta dagli screenshot</h2>
 
 <p>Nella Rosa Fanta puoi importare la tua rosa da uno o più screenshot,
-con <strong>«Leggi dagli screenshot»</strong>. Le immagini le scegli tu
+con <strong>«Carica i tuoi screenshot»</strong>. Le immagini le scegli tu
 dal selettore di sistema: l'app non chiede il permesso di accedere alla
 galleria e riceve soltanto quelle. Il testo lo legge il telefono stesso,
 con il riconoscimento di Apple su iPhone e con ML Kit, una libreria di
@@ -135,6 +139,40 @@ tempi, eventuali codici di errore e un identificativo dell'installazione
 che non identifica né te né il dispositivo. Servono a Google per la
 diagnostica della libreria, e non contengono le immagini né il loro
 contenuto.</p>
+
+<h2>Gli stessi dati su più dispositivi</h2>
+
+<p>Se usi Matchline su più dispositivi puoi tenerli uguali con un
+<strong>codice</strong>, senza account: lo crei nelle Impostazioni, in
+<strong>«I tuoi dispositivi»</strong>, e lo scrivi o inquadri come QR
+sugli altri. È facoltativo: finché non lo crei, nulla di quello che segue
+lascia il telefono.</p>
+
+<p>Con un codice, il nostro server conserva, legati al codice e a
+nessun'altra informazione:</p>
+
+<ul>
+  <li>le rose della Rosa Fanta, con i nomi che hai dato alle squadre, i
+  giocatori, i crediti pagati all'asta e il tetto di crediti</li>
+  <li>le squadre, le partite e i giocatori aggiunti ai preferiti</li>
+  <li>gli avvisi scelti per partite, squadre e giocatori</li>
+  <li>le competizioni che segui</li>
+  <li>la data di creazione e quella dell'ultimo contatto</li>
+</ul>
+
+<p><strong>Non contiene</strong> il token delle notifiche, la lingua, il
+modello o il sistema del telefono, nome, email o indirizzo IP, e non è
+collegato al registro delle notifiche descritto più sotto. Il codice resta
+salvato sui dispositivi su cui lo usi: chi lo conosce vede e cambia questi
+dati, quindi non condividerlo con chi non vuoi che li veda. Per inquadrare
+il QR l'app usa la fotocamera solo mentre il lettore è aperto, e
+l'immagine non viene salvata né inviata.</p>
+
+<p>I dati si cancellano subito con <strong>«Cancella i dati dal
+server»</strong> in «I tuoi dispositivi», e da soli dopo
+<strong>un anno</strong> senza che nessun dispositivo li apra.
+«Scollega questo dispositivo» non cancella niente: il dispositivo smette
+solo di usarli.</p>
 
 <h2>Notifiche push</h2>
 
@@ -174,12 +212,11 @@ che hanno chiesto di essere avvisati.</p>
   <li>il token assegnato da Firebase a quell'installazione</li>
   <li>le partite per cui hai chiesto avvisi, con gli interruttori scelti</li>
   <li>le squadre che segui</li>
-  <li>i giocatori su cui hai acceso la campanella, indicati con il loro
-  identificativo, con gli avvisi che hai scelto per ognuno (voto, gol,
-  cartellini, formazione ufficiale e così via). Per quelli della tua Rosa
-  Fanta con la formazione ufficiale accesa ci sono anche il nome e la
-  squadra di club, per dirti se giocano quando escono le formazioni. I
-  nomi delle tue squadre e i crediti dell'asta restano sul telefono</li>
+  <li>i giocatori su cui hai acceso la campanella, indicati soltanto con il
+  loro identificativo, con gli avvisi che hai scelto per ognuno (voto, gol,
+  cartellini, formazione ufficiale e così via), comprese le scelte fatte per
+  un giocatore dentro una singola partita. I loro nomi, i nomi delle tue
+  squadre e i crediti dell'asta non sono in questo registro</li>
   <li>se hai lasciato accesi i <strong>«Riepiloghi e novità»</strong></li>
   <li>la lingua, per scrivere l'avviso nella lingua giusta</li>
   <li>il sistema del telefono (iOS o Android) e la versione dell'app, per
@@ -224,6 +261,11 @@ dispositivo. Fanno eccezione gli stemmi delle squadre, che l'app scarica
 direttamente dal server di immagini di API-Football: per quelle
 richieste, come per qualunque immagine scaricata da internet, il loro
 server riceve l'indirizzo IP del dispositivo.</p>
+
+<p>Per le probabili formazioni delle nazionali il nostro server legge le
+liste dei convocati dalle pagine di <strong>Wikipedia</strong> delle
+nazionali. Anche queste richieste partono dal nostro server e non
+contengono nulla che ti riguardi.</p>
 
 <p>Come ogni servizio su internet, il nostro server riceve l'indirizzo
 IP da cui arriva ciascuna richiesta. Lo usiamo soltanto per limitare il
@@ -293,8 +335,9 @@ trattamento dei dati personali.</p>
 <p>Matchline non raccoglie dati anagrafici, quindi non abbiamo modo di
 sapere chi sei né di collegarti a un'identità. Quello che conserviamo è
 l'iscrizione agli avvisi descritta sopra, legata al token del
-dispositivo, e — solo se l'app incontra un errore — il rapporto tecnico,
-che Google conserva per 90 giorni.</p>
+dispositivo, i dati legati al codice per più dispositivi, solo se lo hai
+creato, e — solo se l'app incontra un errore — il rapporto tecnico, che
+Google conserva per 90 giorni.</p>
 
 <p>Per cancellare l'iscrizione agli avvisi puoi, in ordine di
 immediatezza:</p>
@@ -309,6 +352,10 @@ immediatezza:</p>
   contatto l'iscrizione viene cancellata da sola;</li>
   <li><strong>scriverci</strong> all'indirizzo in fondo alla pagina.</li>
 </ul>
+
+<p>Per i dati del codice: «Cancella i dati dal server» in «I tuoi
+dispositivi» li cancella subito; altrimenti vengono cancellati da soli
+dopo un anno senza contatto.</p>
 
 <p>Per i rapporti sugli errori: spegnendo «Invia rapporti sugli errori»
 nelle Impostazioni non ne parte più nessuno, e quelli già inviati
@@ -333,32 +380,34 @@ segnalate all'interno dell'app.</p>
 
 <h2 id="english">Privacy Policy — English</h2>
 
-<p>Last updated: 29 October 2026</p>
+<p>Last updated: 12 November 2026</p>
 
 <p>This policy explains how the <strong>Matchline</strong> app handles
 user information. Matchline is developed by Studio25Lab and provides
-football statistics on Serie A, the European cups and Europe's main
-leagues.</p>
+football statistics on Serie A, the European cups and the main European
+and South American leagues.</p>
 
 <div class="nota">
   <p><strong>In short:</strong> Matchline requires no registration,
   creates no account and never asks for your name, email or any
-  personal details. Your preferences stay on your device. There are two
+  personal details. Your preferences stay on your device. There are three
   exceptions: <strong>notifications</strong>, because if you turn them
   on our server needs to know which device to notify and about what —
-  and nothing more — and <strong>error reports</strong>, which tell us
-  when the app breaks and which you can turn off in Settings. The exact
-  list is below.</p>
+  and nothing more —, <strong>error reports</strong>, which tell us
+  when the app breaks and which you can turn off in Settings, and the
+  <strong>code to use the app on several devices</strong>, only if you
+  choose to create one. The exact list is below.</p>
 </div>
 
 <h3>What we do not collect</h3>
 
 <p>Matchline does not require an account and does not ask for your
 name, email address, phone number or any other personal details. We do
-not collect your location, and we do not access your contacts, camera,
+not collect your location, and we do not access your contacts,
 microphone, photo library or personal files. Of your photos, the app
-only sees the images you choose to read your squad from, as explained
-below.</p>
+only sees the images you choose to read your squad from, and the camera
+opens only if you use it to scan the QR code for several devices: in
+both cases the image is neither stored nor sent, as explained below.</p>
 
 <h3>What stays on your device</h3>
 
@@ -368,6 +417,7 @@ storage:</p>
 <ul>
   <li>teams, matches and players added to favourites</li>
   <li>your Fanta squads, with the credits paid at auction</li>
+  <li>the competitions you follow</li>
   <li>notification settings, including your choice about matchday
   recaps</li>
   <li>language, and light or dark theme</li>
@@ -376,12 +426,13 @@ storage:</p>
 </ul>
 
 <p>These stay on your device and are removed when you uninstall the
-app. As long as notifications are off, they never leave your phone.</p>
+app. As long as notifications are off and you have not created a code for
+several devices, they never leave your phone.</p>
 
 <h3>Reading your squad from screenshots</h3>
 
 <p>In Fanta Squad you can import your squad from one or more screenshots,
-with <strong>«Read from screenshots»</strong>. You pick the images in the
+with <strong>«Add your screenshots»</strong>. You pick the images in the
 system picker: the app does not ask for access to your photo library and
 receives only those images. The text is read by the phone itself, with
 Apple's text recognition on iPhone and with ML Kit, a Google library that
@@ -395,6 +446,39 @@ version, format and size of the processing, timings, any error codes and
 an installation identifier that identifies neither you nor the device.
 Google uses it to diagnose the library, and it contains neither the
 images nor their content.</p>
+
+<h3>The same data on several devices</h3>
+
+<p>If you use Matchline on several devices you can keep them in sync with a
+<strong>code</strong>, without an account: you create it in Settings,
+under <strong>«Your devices»</strong>, and type it or scan it as a QR code
+on the others. It is optional: until you create one, nothing below leaves
+your phone.</p>
+
+<p>With a code, our server keeps, tied to the code and to no other
+information:</p>
+
+<ul>
+  <li>your Fanta squads, with the names you gave them, the players, the
+  credits paid at auction and the credit cap</li>
+  <li>the teams, matches and players added to favourites</li>
+  <li>the alerts chosen for matches, teams and players</li>
+  <li>the competitions you follow</li>
+  <li>the date it was created and the date of last contact</li>
+</ul>
+
+<p><strong>It does not hold</strong> the notification token, your
+language, your phone's model or system, name, email or IP address, and it
+is not linked to the notification register described below. The code
+stays stored on the devices where you use it: anyone who knows it can see
+and change this data, so do not share it with anyone you do not want to
+see it. To scan the QR code the app uses the camera only while the scanner
+is open, and the image is neither stored nor sent.</p>
+
+<p>The data is deleted at once with <strong>«Delete the data from the
+server»</strong> in «Your devices», and automatically after <strong>one
+year</strong> without any device opening it. «Unlink this device» deletes
+nothing: the device just stops using it.</p>
 
 <h3>Push notifications</h3>
 
@@ -434,12 +518,11 @@ holds <strong>only</strong>:</p>
   <li>the token Firebase assigned to that installation</li>
   <li>the matches you asked alerts for, with the switches you chose</li>
   <li>the teams you follow</li>
-  <li>the players you switched the bell on for, by their identifier,
+  <li>the players you switched the bell on for, by their identifier only,
   with the alerts you chose for each (rating, goals, cards, official
-  line-up and so on). For those in your Fanta squad with the official
-  line-up alert on, also their name and club, to tell you whether they
-  play when the line-ups come out. Your squad names and auction credits
-  stay on your phone</li>
+  line-up and so on), including the choices made for a player inside a
+  single match. Their names, your squad names and auction credits are not
+  in this register</li>
   <li>whether you left <strong>«Recaps and news»</strong> on</li>
   <li>your language, so the alert is written in the right one</li>
   <li>your phone's system (iOS or Android) and the app version, to tell
@@ -485,6 +568,10 @@ exception is team crests, which the app downloads directly from
 API-Football's image server: for those requests, as for any image
 downloaded from the internet, their server receives your device's IP
 address.</p>
+
+<p>For the national teams' predicted line-ups our server reads the squad
+lists from the national teams' <strong>Wikipedia</strong> pages. These
+requests also come from our server and contain nothing about you.</p>
 
 <p>Like any internet service, our server receives the IP address each
 request comes from. We use it only to limit how many requests a single
@@ -547,6 +634,7 @@ personal data.</p>
 <p>Matchline collects no personal details, so we have no way of knowing
 who you are or of linking you to an identity. What we keep is the
 notification subscription described above, tied to your device token,
+the data tied to the code for several devices, only if you created one,
 and — only if the app runs into an error — the technical report, which
 Google keeps for 90 days.</p>
 
@@ -562,6 +650,10 @@ slowest:</p>
   subscription is deleted by itself;</li>
   <li><strong>write to us</strong> at the address below.</li>
 </ul>
+
+<p>For the code's data: «Delete the data from the server» in «Your
+devices» deletes it at once; otherwise it is deleted automatically after
+one year without contact.</p>
 
 <p>For error reports: turning off «Send error reports» in Settings stops
 any further report, and those already sent are deleted automatically
